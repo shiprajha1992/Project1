@@ -19,7 +19,7 @@ public class TestBase {
 	
 	public void initializtion() throws IOException
 	{
-		FileInputStream fis = new FileInputStream("C:\\Users\\Shipra Jha\\eclipse-workspace\\MavenProject1\\my.properties");
+		FileInputStream fis = new FileInputStream("./my.properties");
 		prop = new Properties();
 		prop.load(fis);
 		String browser = prop.getProperty("browser");//This needs to come from Jenkins / Maven
