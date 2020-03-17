@@ -9,7 +9,7 @@
 	<description>Maven Project 1</description>
 
 	<properties>
-    	<browser>chrome</browser>
+    	<browser>mozilla</browser>
 	</properties>
 	
 	<dependencies>
