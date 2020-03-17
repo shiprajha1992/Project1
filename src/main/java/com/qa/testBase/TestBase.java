@@ -23,6 +23,7 @@ public class TestBase {
 		prop = new Properties();
 		prop.load(fis);
 		String browser = prop.getProperty("browser");//This needs to come from Jenkins / Maven
+		System.out.println(browser);
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shipra Jha\\chromedriver_win32\\chromedriver.exe");
