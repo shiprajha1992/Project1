@@ -23,6 +23,7 @@ public class TestCase1 extends TestBase{
 		super.initializtion();
 		String title = driver.getTitle();
 		System.out.println(title);
+		System.out.println("garbage");
 	}
 	
 	@AfterTest
