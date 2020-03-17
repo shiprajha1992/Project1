@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12645" started-at="2020-03-16T23:12:49Z" finished-at="2020-03-16T23:13:01Z">
+  <suite name="Default suite" duration-ms="12301" started-at="2020-03-17T02:50:35Z" finished-at="2020-03-17T02:50:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12645" started-at="2020-03-16T23:12:49Z" finished-at="2020-03-16T23:13:01Z">
+    <test name="Default test" duration-ms="12301" started-at="2020-03-17T02:50:35Z" finished-at="2020-03-17T02:50:47Z">
       <class name="com.qa.testCases.TestCase1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testCases.TestCase1@1d548a08]" name="setUp" is-config="true" duration-ms="11715" started-at="2020-03-16T23:12:49Z" finished-at="2020-03-16T23:13:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.testCases.TestCase1@1d548a08]" name="test1" duration-ms="38" started-at="2020-03-16T23:13:00Z" finished-at="2020-03-16T23:13:01Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.testCases.TestCase1@5ef60048]" name="test1" duration-ms="11468" started-at="2020-03-17T02:50:35Z" finished-at="2020-03-17T02:50:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.TestCase1@1d548a08]" name="tearDown" is-config="true" duration-ms="829" started-at="2020-03-16T23:13:01Z" finished-at="2020-03-16T23:13:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.TestCase1@5ef60048]" name="tearDown" is-config="true" duration-ms="801" started-at="2020-03-17T02:50:46Z" finished-at="2020-03-17T02:50:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

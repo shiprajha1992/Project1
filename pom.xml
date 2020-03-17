@@ -8,6 +8,10 @@
 	<name>MavenProject1</name>
 	<description>Maven Project 1</description>
 
+	<properties>
+    	<browser>chrome</browser>
+	</properties>
+	
 	<dependencies>
 
 		<dependency>
@@ -24,5 +28,26 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>properties-maven-plugin</artifactId>
+            <version>1.0.0</version>
+            <executions>
+                <execution>
+                    <phase>generate-resources</phase>
+                    <goals>
+                        <goal>write-project-properties</goal>
+                    </goals>
+                    <configuration>
+                        <outputFile>./my.properties</outputFile>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 
 </project>

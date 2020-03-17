@@ -15,20 +15,14 @@ public class TestBase {
 	
 	public TestBase()
 	{
-		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\Shipra Jha\\eclipse-workspace\\MavenProject1\\src\\main\\java\\com\\qa\\resources\\testData.properties");
-			prop = new Properties();
-			prop.load(fis);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 	
-	public static void initializtion()
+	public void initializtion() throws IOException
 	{
-		String browser = prop.getProperty("browser");
+		FileInputStream fis = new FileInputStream("C:\\Users\\Shipra Jha\\eclipse-workspace\\MavenProject1\\my.properties");
+		prop = new Properties();
+		prop.load(fis);
+		String browser = prop.getProperty("browser");//This needs to come from Jenkins / Maven
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shipra Jha\\chromedriver_win32\\chromedriver.exe");
